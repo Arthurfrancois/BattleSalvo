@@ -4,11 +4,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-
-import  java.util.*;
+import java.util.Date;
 
 @Entity
-public class Game {
+public class GamePlayer {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
@@ -24,7 +23,7 @@ public class Game {
 
     public String stateText;
 
-    public Game() { }
+    public GamePlayer() { }
 
     public void updateGameCurrentState()
     {
